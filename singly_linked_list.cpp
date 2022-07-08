@@ -51,13 +51,13 @@ class singlylinkedlist{
                 cout<<"Already exists"<<endl;
             }
             else{
-                if(head==1NULL){
+                if(head==NULL){
                     head=n;
                     cout<<"node appended"<<endl;
                 }
                 else{
-                    node* ptr=NULL;
-                    while(ptr->next==NULL){
+                    node* ptr=head;
+                    while(ptr->next!=NULL){
                         ptr=ptr->next;
                     }
                     ptr->next=n;
